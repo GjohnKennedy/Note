@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="10dp"
+    android:padding="8dp"
+    android:elevation="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:fontFamily="@font/google_sans_bold"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:elevation="10dp"
+            android:padding="12dp"
+            android:text="Title">
+        </TextView>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:maxLines="12"
+            android:textColor="@color/black"
+            android:fontFamily="@font/google_sans_medium"
+            android:padding="12dp"
+            android:text="content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:fontFamily="@font/google_sans_regular"
+            android:padding="12dp"
+            android:textColor="@color/blue"
+            android:text="MyNote">
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
